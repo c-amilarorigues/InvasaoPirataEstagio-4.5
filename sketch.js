@@ -73,7 +73,7 @@ function draw() {
 }
 
 
-//creating the cannon ball on key press
+//criando a bola de canhão ao pressionar a tecla
 function keyPressed() {
   if (keyCode === DOWN_ARROW) {
     var cannonBall = new CannonBall(cannon.x, cannon.y);
@@ -83,7 +83,7 @@ function keyPressed() {
   }
 }
 
-// function to show the ball.
+// função para exibir a bala.
 function showCannonBalls(ball, index) {
   ball.display();
   if (ball.body.position.x >= width || ball.body.position.y >= height - 50) {
@@ -93,7 +93,7 @@ function showCannonBalls(ball, index) {
 }
 
 
-//function to show the boat
+//função para exibir o barco
 function showBoats() {
   if (boats.length > 0) {
     if (
@@ -132,7 +132,7 @@ function showBoats() {
 }
 
 
-//releasing the cannonball on key release
+//liberando a bala de canhão ao soltar a tecla
 function keyReleased() {
   if (keyCode === DOWN_ARROW) {
     balls[balls.length - 1].shoot();
